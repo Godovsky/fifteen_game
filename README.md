@@ -1,5 +1,7 @@
 Autor: andygodov2@gmail.com
 
+The program was tested on SDL2 version 2-28-0
+
 The following libraries are required for the program to work under Windows:
  - SDL2.dll
  - SDL2_image.dll
