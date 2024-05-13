@@ -14,8 +14,8 @@ BIN = bin
 TARGET = $(BIN)/fifteen
 
 all:
-	@$(ECHO) ' * make windows'
-	@$(ECHO) ' * make linux'
+	@$(ECHO) ' * make win'
+	@$(ECHO) ' * make lin'
 
 win: $(TARGET).exe
 $(TARGET).exe: $(SRC)/main.c | $(BIN)
