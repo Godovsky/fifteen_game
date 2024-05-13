@@ -1,4 +1,8 @@
+I wrote a simple game when I was just starting to learn SDL2
+
 Autor: andygodov2@gmail.com
+
+
 
 The program was tested on SDL2 version 2-28-0
 
