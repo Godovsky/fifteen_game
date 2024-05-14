@@ -27,4 +27,4 @@ To build a program for Windows, enter the command: make win
 
 To build a program for Linux, enter the command: make lin
 
-As a result, a bin directory will be created and executable files will be created in it
+As a result, an executable file will be created in game directory
