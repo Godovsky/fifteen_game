@@ -1,3 +1,5 @@
+Fifteen puzzle
+
 I wrote a simple game when I was just starting to learn SDL2
 
 Autor: andygodov2@gmail.com
