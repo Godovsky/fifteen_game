@@ -20,7 +20,8 @@ all:
 win: $(TARGET).exe
 $(TARGET).exe: $(SRC)/main.c
 	@$(ECHO) 'Building $(@F)'
-	@$(CC) $(CFLAGS) $(INCLUDES) -Wl,-subsystem,windows $< -o $@ $(WINDOWSLIBS)
+	#@$(CC) $(CFLAGS) $(INCLUDES) -Wl,-subsystem,windows $< -o $@ $(WINDOWSLIBS)	
+	@$(CC) $(CFLAGS) $(INCLUDES) $< -o $@ $(WINDOWSLIBS)
 
 lin: $(TARGET)
 $(TARGET): $(SRC)/main.c
