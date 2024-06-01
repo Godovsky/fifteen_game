@@ -31,12 +31,20 @@ int MAIN (int argc, char * argv[])
 	if (SDL_Init (SDL_INIT_VIDEO) == -1)
 	{
 		printf ("Could not initialize SDL: %s.\n", SDL_GetError ());
+	
+		printf ("Press 'q' button to quit: ");
+		while (getchar () != 'q');
+
 		return 1;
 	}
 	if (IMG_Init (IMG_INIT_PNG) == -1)
 	{
 		SDL_Quit ();
 		printf ("Could not initialize SDL image: %s.\n", SDL_GetError ());
+
+		printf ("Press 'q' button to quit: ");
+		while (getchar () != 'q');
+
 		return 1;
 	}
 	if (TTF_Init () == -1)
@@ -44,6 +52,10 @@ int MAIN (int argc, char * argv[])
 		SDL_Quit ();
 		IMG_Quit ();
 		printf ("Could not initialize SDL_ttf: %s.\n", SDL_GetError ());
+
+		printf ("Press 'q' button to quit: ");
+		while (getchar () != 'q');
+
 		return 1;
 	}
 	if (Mix_Init (MIX_INIT_MP3) == -1)
@@ -52,6 +64,10 @@ int MAIN (int argc, char * argv[])
 		IMG_Quit ();
 		TTF_Quit ();
 		printf ("Could not initialize SDL mixer: %s.\n", SDL_GetError ());
+
+		printf ("Press 'q' button to quit: ");
+		while (getchar () != 'q');
+
 		return 1;
 	}
 	
@@ -63,7 +79,10 @@ int MAIN (int argc, char * argv[])
 		printf ("Failed to create a window!\n\n");
 		SDL_Quit ();
 		IMG_Quit ();
-		system ("pause");
+		
+		printf ("Press 'q' button to quit: ");
+		while (getchar () != 'q');
+
 		return 1;
 	}
 	
@@ -75,7 +94,10 @@ int MAIN (int argc, char * argv[])
 		SDL_DestroyWindow (window);
 		SDL_Quit ();
 		IMG_Quit ();
-		system ("pause");
+	
+		printf ("Press 'q' button to quit: ");
+		while (getchar () != 'q');
+
 		return 1;
 	}
 	
@@ -90,7 +112,10 @@ int MAIN (int argc, char * argv[])
 		SDL_DestroyWindow (window);
 		SDL_Quit ();
 		IMG_Quit ();
-		system ("pause");
+	
+		printf ("Press 'q' button to quit: ");
+		while (getchar () != 'q');
+		
 		return 1;
 	}
 	Mix_Music * sounds[3] = {NULL, NULL, NULL};
